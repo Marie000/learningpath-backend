@@ -1,0 +1,10 @@
+mariadb:
+    image: mariadb
+    environment:
+        - MARIADATA=/var/lib/mariadb/data
+        - MYSQL_ROOT_PASSWORD=learningpath
+        - MYSQL_DATABASE=learningpath
+        - MYSQL_USER=learningpath
+        - MYSQL_PASSWORD=learningpath
+    ports:
+        - 3307:3306
